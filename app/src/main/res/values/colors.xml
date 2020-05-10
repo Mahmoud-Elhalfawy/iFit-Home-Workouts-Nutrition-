@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="black">#000000</color>
+    <color name="orange">#ff8800</color>
+    <color name="richblack">#1b1b1b</color>
+    <color name="green">#64669900</color>
+    <color name="fred">#ee0979</color>
+    <color name="sred">#ff6a00</color>
+    <color name="fhydro">#2c3e50</color>
+    <color name="shydro">#4ca1af</color>
+    <color name="fmiami">#4da0b0</color>
+    <color name="smiami">#d39d38</color>
+    <color name="flizard">#ffeeee</color>
+    <color name="slizard">#ddefbb</color>
+    <color name="fdeepspace">#232526</color>
+    <color name="sdeepspace">#414345</color>
+    <color name="fmargo">#076585</color>
+    <color name="smargo">#fff</color>
+
+
+</resources>

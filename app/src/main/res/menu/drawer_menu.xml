@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/programs"
+            android:icon="@drawable/programs"
+            android:title="Training programs" />
+        <item
+
+            android:id="@+id/music"
+            android:icon="@drawable/music"
+            android:title="Create Music Playlist"  />
+        <item
+            android:id="@+id/nutrition"
+            android:icon="@drawable/nutrition"
+            android:title="Nutrition" />
+        <item
+            android:id="@+id/contact"
+            android:icon="@drawable/contactus"
+            android:title="Contact Us" />
+
+
+    </group>
+</menu>
