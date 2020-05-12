@@ -10,8 +10,11 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.i_fit.Activities.MainMenuActivity;
+import com.example.i_fit.Activities.NutritionActivity;
 import com.example.i_fit.Activities.TabataWorkoutActivity;
 import com.example.i_fit.Data.DataHandler;
 import com.example.i_fit.Model.DaysItem;
@@ -63,7 +66,6 @@ public class DaysAdapter extends RecyclerView.Adapter<DaysAdapter.ViewHolder> {
             artist=itemView.findViewById(R.id.artistID);
             layout=itemView.findViewById(R.id.layout);
             itemView.setOnClickListener(this);
-
 
 
         }

@@ -150,7 +150,7 @@ cursor.close();
         switch (menuItem.getItemId()){
             case R.id.programs: {
                 drawerLayout.closeDrawer(GravityCompat.START);
-                startActivity(new Intent(SongsActivity.this, TabataWorkoutActivity.class));
+                startActivity(new Intent(SongsActivity.this, TabataDaysActivity.class));
 
             }break;
             case R.id.music: {

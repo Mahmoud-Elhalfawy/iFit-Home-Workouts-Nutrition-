@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<androidx.cardview.widget.CardView
+    android:layout_marginBottom="8dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:background="@drawable/hydrogen"
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:background="@android:color/transparent"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:id="@+id/titleID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:paddingLeft="14dp"
+            android:textColor="#dee7ef"
+
+            android:paddingTop="10dp"
+            />
+
+        <TextView
+
+            android:background="@android:color/transparent"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-condensed"
+            android:id="@+id/clickID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Click to show"
+            android:textColor="#dee7ef"
+
+            android:paddingLeft="14dp"
+            android:paddingTop="10dp"
+            />
+        <LinearLayout
+            android:padding="12dp"
+            android:layout_margin="8dp"
+            android:id="@+id/expandablelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+
+            <TextView
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-condensed"
+
+                android:id="@+id/descriptionID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:layout_weight="1"/>
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gifV"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+</RelativeLayout>

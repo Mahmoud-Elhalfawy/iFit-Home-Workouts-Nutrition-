@@ -59,6 +59,7 @@ this.context=context;
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         public TextView name;
         public TextView artist;
+
         public LinearLayout layout;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);

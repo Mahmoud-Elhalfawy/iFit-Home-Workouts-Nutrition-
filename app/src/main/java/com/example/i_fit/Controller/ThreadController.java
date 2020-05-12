@@ -22,6 +22,7 @@ TabataWorkoutActivity strategy;
  boolean train;
  int i=0;
 int day;
+boolean ready;
 Circuit x;
  private HashMap<Integer, ArrayList<Circuit>> training;
 
@@ -36,18 +37,8 @@ Circuit x;
 
     @Override
     public void run() {
-        boolean next=true;
-        int flag=0;
-        int j=0;
-        int reps=0;
-        boolean train;
-        int i=0;
-        try {
-            Thread.sleep(50);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
         timer.reset();
+
          x=training.get(day).get(j);
         while(running) {
             if(strategy.pause) {
@@ -56,11 +47,30 @@ Circuit x;
                 continue;
             }
 
+
+                try {
+                    Thread.sleep(50);
+                    if(timer.getSeconds()<3 && !ready) {
+                        strategy.showCount(new Workout("Get Ready!",R.drawable.end));
+                        continue;
+                    }else if(!ready && timer.getSeconds()>=3){
+                        strategy.flag=0;
+                            timer.reset();
+                            ready = true;
+                            continue;
+                    }
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+
+
             try {
                 checkNext();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
+
 
 
             try {

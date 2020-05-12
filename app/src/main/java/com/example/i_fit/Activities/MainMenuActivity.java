@@ -25,8 +25,8 @@ import com.google.android.material.navigation.NavigationView;
 
 public class MainMenuActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     GridView gridView;
-    int[] images = {R.drawable.circlecroppedd, R.drawable.foodcroppedd, R.drawable.musiccropped, R.drawable.progressp, R.drawable.contact};
-    String[] texts = {"Training Programs", "Nutrition", "Music", "Track Progress", "Contact Us"};
+    int[] images = {R.drawable.training2, R.drawable.nutrition2, R.drawable.music2, R.drawable.prog2, R.drawable.contact2};
+    String[] texts = {"Training Programs", "Nutrition", "Music Playlist", "Track Progress", "Contact Us"};
     private DrawerLayout drawerLayout;
     private NavigationView navigationView;
     private Handler mHandler;

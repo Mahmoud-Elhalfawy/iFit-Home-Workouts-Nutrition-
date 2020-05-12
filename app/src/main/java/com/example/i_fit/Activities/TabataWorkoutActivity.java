@@ -50,6 +50,8 @@ public class TabataWorkoutActivity extends AppCompatActivity implements Strategy
     public boolean pause;
     public boolean next;
     public boolean mute;
+    public pl.droidsonroids.gif.GifImageView gifImageView;
+    pl.droidsonroids.gif.GifImageView gifImageView2;
 
     @Override
     public void onBackPressed() {
@@ -62,8 +64,6 @@ public class TabataWorkoutActivity extends AppCompatActivity implements Strategy
     ArrayList<ListItem> arrayList;
     final int MY_PERMISSION_REQUEST=1;
    static ThreadController thread;
-    pl.droidsonroids.gif.GifImageView gifImageView;
-    pl.droidsonroids.gif.GifImageView gifImageView2;
 
     Boolean running=true;
     Circuit c;
@@ -185,7 +185,19 @@ try {
                     Toast.makeText(this, "No Songs added", Toast.LENGTH_LONG).show();
     }
 
-    public void showTraining(final Workout w){
+
+    public void showCount(Workout w){
+        mHandler.post(() -> {
+
+
+            showAnimation(w.getGif());
+            trainingText.setText(w.getName());
+            //if(!w.getName().equals("End Of Training"))
+            timerText.setText(String.valueOf(3-timer.getSeconds()));
+
+        });
+    }
+    public void showTraining( Workout w){
 
        mHandler.post(() -> {
 
@@ -196,6 +208,7 @@ try {
                timerText.setText(String.valueOf(timer.getSeconds()));
 
            });
+
     }
     public void switchC(){
         mHandler.post(() -> Toast.makeText(TabataWorkoutActivity.this, "Next Circuit will start after this workout", Toast.LENGTH_LONG).show());
